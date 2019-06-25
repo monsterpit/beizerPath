@@ -70,25 +70,25 @@ class ViewController: UIViewController {
         let layer = CAShapeLayer()
         layer.path  = path.cgPath
         
-        layer.strokeEnd = 0
-        layer.lineWidth = 2
-        layer.borderColor = UIColor.red.cgColor
-        layer.shadowColor = UIColor.yellow.cgColor
-        layer.shadowRadius = 6
-        layer.shadowOffset = CGSize(width: 1, height: 1)
-        layer.shadowOpacity = 0.8
-        layer.strokeColor = UIColor.blue.cgColor
+        layer.strokeEnd = 2
+//        layer.lineWidth = 2
+//        layer.borderColor = UIColor.red.cgColor
+//        layer.shadowColor = UIColor.yellow.cgColor
+//        layer.shadowRadius = 6
+//        layer.shadowOffset = CGSize(width: 1, height: 1)
+//        layer.shadowOpacity = 0.8
+//        layer.strokeColor = UIColor.blue.cgColor
         layer.fillColor = UIColor.green.cgColor
         
         myview.layer.addSublayer(layer)
         
-        let animation = CABasicAnimation(keyPath: "strokeEnd")
-        animation.toValue = 1
-        animation.duration = 5  //Second
-        animation.autoreverses = true
-        animation.repeatCount = .infinity
-        
-        layer.add(animation, forKey: "line")
+//        let animation = CABasicAnimation(keyPath: "strokeEnd")
+//        animation.toValue = 1
+//        animation.duration = 5  //Second
+//        animation.autoreverses = true
+//        animation.repeatCount = .infinity
+//
+//        layer.add(animation, forKey: "line")
         
     }
     func makeAppleLogo(){
